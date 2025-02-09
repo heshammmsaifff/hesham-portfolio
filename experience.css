@@ -1,0 +1,148 @@
+.experiences {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experiences h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: orangered;
+}
+
+.experience {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience h2 {
+  font-size: 24px;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.experience:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 0 15px orangered;
+}
+
+.experience:hover h2 {
+  color: white;
+}
+
+.experience:hover p {
+  color: white;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.experience.show {
+  animation: bounce 1s;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  .experiences {
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  .experiences h1 {
+    font-size: 32px;
+  }
+
+  .experience h2 {
+    font-size: 22px;
+  }
+
+  .experience p {
+    font-size: 14px;
+  }
+}
+
+/* Responsive design for medium screens (tablets) */
+@media (max-width: 768px) {
+  .experiences {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .experiences h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    padding: 15px;
+  }
+
+  .experience h2 {
+    font-size: 20px;
+  }
+
+  .experience p {
+    font-size: 14px;
+  }
+
+  .experience:hover {
+    box-shadow: 0 0 10px orangered;
+  }
+}
+
+/* Responsive design for small screens (mobile devices) */
+@media (max-width: 480px) {
+  .experiences {
+    padding: 15px;
+  }
+
+  .experiences h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .experience {
+    padding: 10px;
+  }
+
+  .experience h2 {
+    font-size: 18px;
+  }
+
+  .experience p {
+    font-size: 12px;
+  }
+
+  .experience:hover {
+    box-shadow: 0 0 8px orangered;
+  }
+}
